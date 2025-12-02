@@ -34,17 +34,17 @@ Corporate silver-grey theme
 
 👤 Customer Management
 
-Add/update customers automatically
+Auto add / update customers
 
-Auto-detect existing customers
+Automatically detects existing customers
 
-Customer Overview Panel:
+Customer Overview Panel shows:
 
 All past bills
 
 Total quantity purchased
 
-Total billing value
+Total billing amount
 
 Total number of invoices
 
@@ -66,29 +66,29 @@ Daily Summary
 
 Monthly Summary
 
-Multi-select delete
+Supports multi-select delete
 
 📄 Invoice Highlights
 
 Premium layout with gold header
 
-Auto-aligned data table
+Auto-aligned table
 
-Company branding (Logo + Signature placeholders)
+Logo + Signature placeholders
 
-Modern clean typography
+Clean, modern typography
 
 “System Generated – No Signature Needed” footer
 
-Supports multiple selected rows in a single invoice
+Multi-row invoice support
 
 🖥️ Tech Stack
 Component	Technology
-UI	Tkinter (Silver-grey corporate theme)
+UI	Tkinter (Silver-Grey Theme)
 Database	SQLite
 PDF Generator	ReportLab
 Packaging	PyInstaller
-Distribution	Inno Setup Installer
+Installer	Inno Setup
 ⚙️ Installation (Developers)
 1️⃣ Clone the Repository
 git clone https://github.com/harshshah-2023/Commercial-Billing-Software.git
@@ -98,41 +98,45 @@ cd Commercial-Billing-Software/src
 python -m venv venv
 
 
-Activate it (Windows):
+Activate (Windows):
 
 venv\Scripts\activate
 
 3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-4️⃣ Run the App
+4️⃣ Run the Application
 python main.py
 
 🛠️ Build EXE (Standalone)
-Install PyInstaller
+
+Install PyInstaller:
+
 pip install pyinstaller
 
-Build Command
+
+Build Command:
+
 pyinstaller --noconsole --onefile --icon=logo.ico main.py
 
 
-Your EXE will be generated here:
+EXE will be generated here:
 
 src/dist/main.exe
 
-📦 Deployment (Client Version)
+📦 Deployment (Client Release)
 
-Prepare your deployment folder:
+Prepare deployment folder:
 
 Billing_Install/
  ├ main.exe
  ├ ms_traders_billing.db
  ├ invoices/
- ├ logo.jpeg     ← (Not included in repo)
- ├ sign.jpeg     ← (Not included in repo)
+ ├ logo.jpeg      ← Not included in repo
+ ├ sign.jpeg      ← Not included in repo
 
 
-Use Inno Setup to create a single-click installer for clients.
+Use Inno Setup to build a Windows Installer (.exe).
 
 📁 Project Structure
 Commercial-Billing-Software/
@@ -140,19 +144,38 @@ Commercial-Billing-Software/
      ├── main.py
      ├── requirements.txt
      ├── main.spec
-     ├── logo.jpeg       // Not included
-     ├── sign.jpeg       // Not included
+     ├── logo.jpeg    // Not included
+     ├── sign.jpeg    // Not included
      ├── invoices/
      ├── build/
      └── dist/
 
-📜 License (MIT)
+📜 License — No License (All Rights Reserved)
 
-This project is licensed under the MIT License:
+This project is released WITHOUT a license, meaning:
 
-✔ Free personal & commercial use
-✔ Modification allowed
-✔ Sharing allowed with attribution
-✘ Author not liable for damages
+❌ Not allowed:
 
-Developed with care by Harsh Shah
+No commercial use
+
+No personal use
+
+No modification
+
+No redistribution
+
+No derivative works
+
+✔ Allowed:
+
+Only viewing the source code on GitHub
+
+By default, ALL RIGHTS RESERVED.
+
+This fully protects your work and prevents misuse, copying, reselling, or repackaging by anyone.
+
+👨‍💻 Developed With Care
+
+Harsh Shah
+
+Offline, optimized for business workflows, and production-ready for real clients.
