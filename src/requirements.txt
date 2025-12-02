@@ -1,0 +1,4 @@
+tkcalendar
+reportlab
+Pillow
+pywin32
